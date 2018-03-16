@@ -51,10 +51,21 @@ public class Student {
         }
         while (1 != 0);
         System.out.println("Enrolled in: " + courses);
-        System.out.println("Tuition balance: " + tuitionBalance);
     }
     // View balance
+    public void viewBalance(){
+        System.out.println("Your balance is: $" + tuitionBalance);
+    }
 
     // Pay tuition
+    public void payTuition(){
+        viewBalance();
+        System.out.println("Enter your payment: $");
+        Scanner in = new Scanner(System.in);
+        int payment = in.nextInt();
+        tuitionBalance -= payment;
+        System.out.println("Thank you for your payment of $" + payment);
+        viewBalance();
+    }
 
 }
