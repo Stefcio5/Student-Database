@@ -72,7 +72,8 @@ public class Student {
         return "Student name: " + firstName + " " + lastName +
                             "\nStudent ID: " + studentID +
                             "\nCourse enrolled: " + courses +
-                            "\nBalance: $" + tuitionBalance;
+                            "\nBalance: $" + tuitionBalance +
+                            "\n";
 
     }
 
